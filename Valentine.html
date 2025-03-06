@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación San Valentín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            margin: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz San Valentín! ❤️</h1>
+        <p>Te invito a una cena especial en un restaurante que se que te va a gustar mucho, aceptas?</p>
+        <button class="button" onclick="mostrarMensaje()">Aceptar Invitación</button>
+        <p id="mensaje" style="display: none; color: #ff4d4d; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+            document.getElementById("mensaje").innerText = "Perfectinho! Te recojo a las 6:30 PM mi amor 💖";
+        }
+    </script>
+</body>
+</html>
